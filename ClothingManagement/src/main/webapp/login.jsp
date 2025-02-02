@@ -58,14 +58,14 @@
                             <div class="form-group">
                                 <label class="sherah-wc__form-label">Email Address</label>
                                 <div class="form-group__input">
-                                    <input class="sherah-wc__form-input" type="email" name="email" placeholder="demo3243@gmail.com" required="required" value="${cookie.cookie_email != null ? cookie.cookie_email.value : ''}">
+                                    <input class="sherah-wc__form-input" type="email" name="email" placeholder="demo3243@gmail.com" required="required"  pattern="^\S+$"  value="${cookie.cookie_email != null ? cookie.cookie_email.value : ''}">
                                 </div>
                             </div>
                             <!-- Form Group -->
                             <div class="form-group">
                                 <label class="sherah-wc__form-label">Password</label>
                                 <div class="form-group__input">
-                                    <input class="sherah-wc__form-input" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" id="password-field" type="password" name="password" placeholder="" maxlength="50" required="required" value="${cookie.cookie_password != null ? cookie.cookie_password.value : ''}">
+                                    <input class="sherah-wc__form-input" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" id="password-field" type="password" name="password" placeholder="" maxlength="50" required="required"  pattern="^\S+$"  value="${cookie.cookie_password != null ? cookie.cookie_password.value : ''}">
                                 </div>
                             </div>
                             <!-- Form Group -->
