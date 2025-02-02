@@ -1,48 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: admin
-  Date: 2/1/2025
-  Time: 4:39 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%--
-    Document   : header
-    Created on : Feb 1, 2025, 3:44:38 PM
-    Author     : admin
---%>
 
-<!DOCTYPE html>
-<html class="no-js" lang="zxx">
-<head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Site keywords here">
-    <meta name="description" content="#">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Site Title -->
-    <title>Sherah - HTML eCommerce Dashboard Template</title>
-
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <!-- Fav Icon -->
-    <link rel="icon" href="img/favicon.png">
-
-    <!-- sherah Stylesheet -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome-all.min.css">
-    <link rel="stylesheet" href="css/charts.min.css">
-    <link rel="stylesheet" href="css/datatables.min.css">
-    <link rel="stylesheet" href="css/jvector-map.css">
-    <link rel="stylesheet" href="css/slickslider.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body id="sherah-dark-light">
 <!-- Start Header -->
 <header class="sherah-header">
     <div class="container g-0">
@@ -390,7 +346,9 @@
                                                                     <path id="path52" d="M9.27,291.179a.877.877,0,0,0-.867.889V299.1a.876.876,0,1,0,1.752,0v-7.033a.877.877,0,0,0-.885-.889Zm5.105,1.763c-.028,0-.057,0-.085,0A.88.88,0,0,0,13.8,294.5a7,7,0,1,1-9.076.026.882.882,0,0,0,.1-1.239.873.873,0,0,0-1.234-.1,8.815,8.815,0,0,0,5.691,15.495,8.815,8.815,0,0,0,5.652-15.521.873.873,0,0,0-.561-.216Z" transform="translate(-0.529 -291.179)" fill="#fff"/>
                                                                 </svg>
                                                             </div>
-                                                            <h4 class="sherah-dropdown-card-name"><a href="#">Logout</a></h4>
+                                                            <c:if test="${sessionScope.account != null}">
+                                                                <h4 class="sherah-dropdown-card-name"><a href="logout">Logout</a></h4>
+                                                            </c:if>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -409,23 +367,3 @@
     </div>
 </header>
 <!-- End Header -->
-
-
-<!-- sherah Scripts -->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery-migrate.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/charts.js"></script>
-<script src="js/final-countdown.min.js"></script>
-<script src="js/fancy-box.min.js"></script>
-<script src="js/fullcalendar.min.js"></script>
-<script src="js/datatables.min.js"></script>
-<script src="js/circle-progress.min.js"></script>
-<script src="js/jquery-jvectormap.js"></script>
-<script src="js/jvector-map.js"></script>
-<script src="js/main.js"></script>
-
-</body>
-</html>
